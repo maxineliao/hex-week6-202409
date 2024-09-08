@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+		<title>一起探索生活的無限可能 ｜ 會員註冊</title>
+	</head>
+	<body>
+        <%- include('./layout/header'); -%>
+        <section class="register my-9 my-lg-11">
+            <div class="container px-0 px-md-2 overflow-hidden">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6 col-md-10">
+                        <div class="content bg-white border border-1 border-primary-300 p-5 p-lg-7">
+                            <h4 class="text-accent-200 mb-7">註冊</h4>
+                            <form>
+                                <div class="mb-3">
+                                    <label for="username" class="form-label">會員帳號</label>
+                                    <input type="text" class="form-control" id="username" aria-describedby="emailHelp" placeholder="請輸入會員帳號">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="Password1" class="form-label">密碼</label>
+                                    <input type="password" class="form-control" id="Password1" placeholder="請輸入密碼">
+                                </div>
+                                <div class="mb-7">
+                                    <label for="email" class="form-label">電子信箱</label>
+                                    <input type="email" class="form-control" id="email" placeholder="請輸入電子信箱">
+                                </div>
+                                <button type="submit" class="btn py-md-3 btn-accent-200 text-white py-sm-2 w-100 mb-5 mb-lg-7">立即註冊<i class="bi bi-arrow-right ms-2"></i></button>
+                            </form>
+                            <div class="position-relative mb-5 mb-lg-7">
+                                <hr class="border-light w-100">
+                                <p class="text-gray-300 bg-white position-absolute start-50 top-0 translate-middle px-2">或以其他方式註冊</p>
+                            </div>
+                            <button class="w-100 border-0 py-2 rounded-pill mb-1" type="button"><i class="bi bi-google me-2 text-dark"></i>使用 Google 註冊</button>
+                            <button class="w-100 border-0 py-2 rounded-pill mb-7" type="button"><i class="bi bi-facebook me-2 text-info"></i>使用 Facebook 註冊</button>
+                            <div class="d-flex justify-content-center">
+                                <p class="me-2">已經是會員了？</p>
+                                <a class="text-accent-200" href="#">點此登入</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <%- include('./layout/footer'); -%>
+        <script type="module" src="../main.js"></script>
+    </body>
+</html>

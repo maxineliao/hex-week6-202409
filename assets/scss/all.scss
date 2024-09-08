@@ -1,0 +1,29 @@
+@import "bootstrap/scss/functions";
+
+@import "./base/typography";
+@import "./helpers/variables";
+// Import all of Bootstrap's CSS
+@import "bootstrap/scss/bootstrap";
+$utilities: (
+  "badge": (
+    property: opacity,
+    class: opacity,
+    state: hover,
+    values: (
+      0: 0,
+      25: .25,
+      50: .5,
+      75: .75,
+      100: 1,
+    )
+  )
+);
+@import "bootstrap/scss/utilities/api";
+
+
+@import "./helpers/helpers";
+
+@import "./layout/header.scss";
+
+@import "./pages/index.scss";
+@import "./pages/register";

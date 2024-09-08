@@ -1,0 +1,42 @@
+.hero-banner {
+	.text-box {
+		bottom: 0;
+		left: 50%;
+	}
+}
+@media (min-width: 768px) {
+	.hero-banner {
+		.text-box {
+			bottom: auto;
+			top: 50%;
+			left: 0;
+			transform: translate(0, -50%) !important;
+		}
+	}
+}
+.line {
+	width: 5rem;
+}
+.article {
+	.card {
+		.card-img-top {
+			height: 192px;
+		}
+	}
+}
+.sale {
+	.decor-2 {
+		right: 0;
+	}
+}
+@media (min-width: 576px) {
+	.sale {
+		.decor-2 {
+			right: 5%;
+		}
+	}
+}
+.bg-gradient-customize {
+	background: rgb(33,37,41);
+	background: linear-gradient(180deg, rgba(33,37,41,0.04947916666666663) 0%, rgba(33,37,41,1) 100%);
+}
